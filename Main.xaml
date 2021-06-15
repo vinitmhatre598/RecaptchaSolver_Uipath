@@ -1,0 +1,571 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1163,651" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="27">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Net.Http.Headers</x:String>
+      <x:String>System.Net.Http</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="21">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Net.Http</AssemblyReference>
+      <AssemblyReference>System.Net.Http.WebRequest</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="509,482" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,390" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.google.com/recaptcha/api2/demo">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,289" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'nvidia share.exe'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f9048945-7ac7-496d-871a-5e8ca8a2ea1e" InformativeScreenshot="ddbd5246363e59c813405d39c737aa20">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <Flowchart sap:VirtualizedContainerService.HintSize="1632,917" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+              <Flowchart.Variables>
+                <Variable x:TypeArguments="x:String" Name="downloadaudio" />
+                <Variable x:TypeArguments="x:String" Name="guardop" />
+                <Variable x:TypeArguments="x:Boolean" Name="Tryagain" />
+                <Variable x:TypeArguments="x:Boolean" Name="retry" />
+              </Flowchart.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">70,2.5</av:Point>
+                  <av:Size x:Key="ShapeSize">60,75</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">100,77.5 100,107.5 120,107.5 120,117</av:PointCollection>
+                  <x:Double x:Key="Width">1598</x:Double>
+                  <x:Double x:Key="Height">881</x:Double>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Flowchart.StartNode>
+                <x:Reference>__ReferenceID12</x:Reference>
+              </Flowchart.StartNode>
+              <FlowStep x:Name="__ReferenceID12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">20,117</av:Point>
+                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">120,183 120,194.5</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on checkbox" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="632625bd-ba3a-4ece-9e91-9b3b4badcca3" InformativeScreenshot="9c70f928d171141027380d007a2b705c" Selector="&lt;webctrl aria-role='presentation' tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' idx='1' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on headphone" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce88a47d-2289-4a4d-927e-5c4506c9021a" InformativeScreenshot="bc2204eec2eacd923e0aad53949a52a4" Selector="&lt;html app='msedge.exe' title='ReCAPTCHA demo' /&gt;&lt;webctrl src='https://www.google.com/recaptcha/api2/bframe?hl=en&amp;amp;v=**' tag='IFRAME' /&gt;&lt;webctrl id='recaptcha-audio-button' tag='BUTTON' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">20,194.5</av:Point>
+                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">120,245.5 120,275.5 130.141666666667,275.5 130.141666666667,276.5</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ImageFound DisplayName="IF GOOGLE DETECTS IP ADDRESS" Found="[Tryagain]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                      <ui:ImageFound.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS0AAABFCAYAAAAfM7BtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAh+SURBVHhe7Zxbb1VFGIb9CVz2N3nrHRfemXhpvDFGo1ETY4wxXKDGaIiIBzwgWoKoKAoKcggtcqocBDmV0hM9t7un5Xpm9yvTxezd2ey96Cx53+RJ7axZs2emfO+ab9ZsH+vp6cmEEKIqONOSJEmqimRakiRVSjItSZIqJZmWJEmVkkxLkqRKSaYlSVKlJNOSJKlSkmlJklQpybQkSaqUZFqSJFVKLZnW41uuCyFEKcRKpiWESIJYybSEEEkQK5mWECIJYiXTEkIkQaxkWkKIJIiVTEsIkQSxkmkJIZIgVjItIUQSxEqmJYRIgljJtIQQSRArmZYQIgliJdMSQiRBrGRaQogkiJVMSzw0nv74dvbG98PuZ+h6O/Ren3X/RvkZui7SJ1YyrQ5xbWR+ZZbi9CgG14WBmhv71aH54PV2kGlVn1jJtDoEATlTW17D4lJ93uYX15bD0X9mgu38nzlyeSZbXs6yk9c6byydMK3ndw1mw5OL2UL+9/rs2HiwjiiPWMm0SsRWX3r6l49Mq/rESqZVIjKth4dMq/rESqZVIuuZlgXa6ZtzLmUiWEglu09NZP1jC+5aKI3ce3rSpVl3JhayZ3cO3HfdZ8v+EbeHRLuIlHVgfCH74NDdYH3Kub6UV+eOybml7OfzU9mplb7+eHZqTX0+//jV2Wy6tuTqw8Rs/Z4n3r2xpm7IWKyMdnf3TGSj04ur7YxMLTbsZ5FQ2/Dkh7eyA33Trk/WLn09fmVm9YWAmVVIxfG+uHsw67tdy2or88m8XhyouXK/nv3tD16YdteZz6l8Lt/cN7ymnrhHrGRaJRJrWrWFZRdMyJ7yv/097cowkGc+X2tMl+/UN7QJPL+8yM7j4y64aIegvJKb1/hMPXgp//To2tXEjj/HXF8QwYgpOjPKi6zcD+KXvh3MhlaCnYD8d3g+u52brRlece8qZCxWNpb3C0Pl8/hcM1lME+P12wkRahtTYsxoLu8/f4+bowtujhHXntre7+a3N+8r/Xd/i/wyDw2uf5LPibW39ZdRN07upl+0x+8IU/T7aX97mzfEXuZbP6w/lkeVWMm0SiTWtAii/eem3KrArr3904gLYP7Rb/v93mrj9b3DLkCK5UVs9YCBsOqxclY/tmoiSG01xIoJg0SszGwFx3WMygLdNy3rP8HtH2P4IjdL6tN/xlGs78+HPwe0bf3xDZHVitVvRKhtxo0B0Q7tWfk7B+rmw2f6aWCz9NDmh1nA4KyfjNveip67Nbdabn97jOrLE+Or5aIxsZJplUisaZ3vn7vvGv/ILw/Wg8FPEXednHArklt3F9wqwb/H5+XvhlwaA/y3f42AJDAJUAKVMlZZrG5YQRRTGPpyY7Q+Ft+0eBtYXI1Ao+APGYuV0c9iYGNWiJWlXx4i1Pa+M5Ouf/z064L9bfzxNDMtm/dQSo4Jzswvu4cJDxXKrP0YwxV1YiXTKpFY02p0fc+p+/euMDie9qSPxfqxhEyL4EWYU2hVEAryRjyIaYXmwPrEZxevFWnWTohWTeuvG3Oufui4ht2H6WP+lLUyX6JOrGRaJdKuab3SPZTdnV50+08fHR5zKQ6/81Tn6R66xwfzIVUjrbE9Il++aVlfCM5iO9AoCNmjcWfU8j4VPyEF02KDnHTO9qKKijUtG38z+ffJtFonVjKtEmnXtODszfoTnk33r07kK6Sl5Xw11Dw1BAyLYCVQMT3SJFKVX/qm3OeR6vimxQoCNepLKAj9jX6M8VjeR9o/dHHapZkbbVr+xjlvIpkP+gf8jlo1rcGJ+guNEJfyNNYeJjKt1omVTKtEOmFaBA9BRIqIgRGAMYHAJj2b9QRtcVVmbfqmZQYRmx7yxs1tTOcd4kiBX7dR8IfG22wOrE8Palr2lpUXD8UxhUylmWmRlqPYbzLItFonVjKtEumEabGXhWHxFpBgCm2Uh2gW8DsDpmUmF7sRT1poX0kqvsZ/4ZtBt5LZSNNqZkCh8ax3D/V4YIQ24oE3v74xyrRaJ1YyrRLphGkBT3cTbxRDK6Eilkqy0nr/4L2jEZwlsqMEvmmRbpJ2ouKRB1ZSmCayILT9NVZapJ3WJ+47s7Ii3EjT8sfD4V07TsLPw5dmXHqMfFPhHt7KMiYO8Fo5vLanvr/IuFi5+cdTXu0ecvdxhMTmTabVOrGSaZVIp0zrvV9Hs1k2uvOI4Y1iqE4R/2AlhsNGuWsj/50VFWUYmr+q2rqyB4SKh0sB+UHIOSja4RKHN1l1YQbA/ZT7xw1C4202B+2YFtieG2LM9M/6RX9R8W0ge4eIMVDfTwc52kEZYj7pF4dpqUspbZl5y7RaJ1YyrRLplGlZusWTnjeKoToheOqz+WyBS3DxlRJMkDNFoTSIlRinxs2MSBcxp+uBICRAu3MT9b8iQz+3/TG2up/kjy003mZz0K5pAX2hT9Y/+kqfbfXqH7AFVpCkjla/+K0DzmHxttTmlHmifb6C5Lcj02qdWMm0KoClemzEh66XjaVNmB6HLEN1hGiXWMm0Eue5r++4t3SYFuYVqtMpSD1ZIflf/mX1YHtarPT8r8MI0UliJdNKlO2Hx1wqY4dC2Z9a72xWO2BOdq6LFRWb9aROpIeUkQ6xRxS6V4hOECuZVqLsOFL/Py5gIH39teBr9k6DcdkJej4X8RPzYh8sdI8QnSJWMi0hRBLESqYlhEiCWMm0hBBJECuZlhAiCWIl0xJCJEGsZFpCiCSIlUxLCJEEsZJpCSGSIFYyLSFEEsRKpiWESIJYybSEEEkQK5mWECIJYtWSaUmSJG20ZFqSJFVKMi1JkiolmZYkSZWSTEuSpEpJpiVJUqUk05IkqVKSaUmSVCnJtCRJqpScafX29mabN2/Ourq6sk2bNgkhRFLgTXgUXuVMS2YlhKgCXV1d2X+kc1WgHiBuWAAAAABJRU5ErkJggg==" />
+                      </ui:ImageFound.Image>
+                      <ui:ImageFound.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3a6baf0a-78db-46d9-bbba-4068b4b3e0f3" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
+                      </ui:ImageFound.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ImageFound>
+                    <FlowStep.Next>
+                      <FlowDecision x:Name="__ReferenceID6" Condition="[Tryagain]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <av:Point x:Key="ShapeLocation">90.6416666666667,276.5</av:Point>
+                            <av:Size x:Key="ShapeSize">79,87</av:Size>
+                            <av:PointCollection x:Key="TrueConnector">90.6416666666667,320 10,320 10,410 40,410</av:PointCollection>
+                            <av:PointCollection x:Key="FalseConnector">169.641666666667,320 199.641666666667,320 199.641666666667,254.5 510,254.5 510,284.5</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <FlowDecision.True>
+                          <FlowStep x:Name="__ReferenceID7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">40,384.5</av:Point>
+                                <av:Size x:Key="ShapeSize">200,51</av:Size>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="DISPLAY MSG &quot;CHANGE YOUR IP&quot;" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;CHANGE YOUR IP OR PROXY&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:MessageBox>
+                          </FlowStep>
+                        </FlowDecision.True>
+                        <FlowDecision.False>
+                          <FlowStep x:Name="__ReferenceID0">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">410,284.5</av:Point>
+                                <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">510,335.5 510,354.5 520,354.5</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="href" DisplayName="GETTING URL OF THE AUDIO FILE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                              <ui:GetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:String">[downloadaudio]</OutArgument>
+                              </ui:GetAttribute.Result>
+                              <ui:GetAttribute.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="666d8001-e8ee-4028-a9d8-d5443c0748b1" InformativeScreenshot="3f678e3c3ef2786120de992a252344cd" Selector="&lt;html app='msedge.exe' title='ReCAPTCHA demo' /&gt;&lt;webctrl src='https://www.google.com/recaptcha/api2/bframe?hl=en&amp;amp;v=**' tag='IFRAME' /&gt;&lt;webctrl tag='A' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetAttribute.Target>
+                            </ui:GetAttribute>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">420,354.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">520,405.5 510,405.5 510,424.5</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using wc As New System.Net.WebClient()&#xA;               wc.DownloadFile(Url,Path)&#xA;    End Using" DisplayName="DOWNLOADING AUDIO FILE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                                  <ui:InvokeCode.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="url">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="downloadaudio" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="path">
+                                      <Literal x:TypeArguments="x:String">C:\Users\vinit\Desktop\ReCaptcha Solver NervousTuber\captchaaudio\audio.mp3</Literal>
+                                    </InArgument>
+                                  </ui:InvokeCode.Arguments>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InvokeCode>
+                                <FlowStep.Next>
+                                  <FlowStep x:Name="__ReferenceID4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">410,424.5</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">510,475.5 510,497</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="OPENING NEW TAB" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="t" KeyModifiers="Ctrl">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="8354f86e-6357-4832-878c-24834acb2174">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:SendHotkey>
+                                    <FlowStep.Next>
+                                      <FlowStep x:Name="__ReferenceID2">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">410,497</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">510,563 510,577</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="ui:Browser" Name="ibmsite" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Edge" DisplayName="Opening IBM Watson in new tab" sap:VirtualizedContainerService.HintSize="434,1033" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="11166cb7879102f60a4ea8d665d9b0d4" Selector="&lt;html app='msedge.exe' title='New tab' /&gt;" UiBrowser="[ibmsite]">
+                                            <ui:BrowserScope.Body>
+                                              <ActivityAction x:TypeArguments="x:Object">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,887" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:NavigateTo Browser="[ibmsite]" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://speech-to-text-demo.ng.bluemix.net/" />
+                                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK ON UPLOAD AUDIO" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                    <ui:Click.CursorPosition>
+                                                      <ui:CursorPosition Position="Center">
+                                                        <ui:CursorPosition.OffsetX>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetX>
+                                                        <ui:CursorPosition.OffsetY>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetY>
+                                                      </ui:CursorPosition>
+                                                    </ui:Click.CursorPosition>
+                                                    <ui:Click.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d70f467e-7749-4092-964a-6ac1e263effa" InformativeScreenshot="5b956acba47c3219c00a9ffae0c461ea" Selector="&lt;webctrl aaname=' Upload Audio File' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                      </ui:Target>
+                                                    </ui:Click.Target>
+                                                  </ui:Click>
+                                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="SETTING AUDIO FILE PATH" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_3" Text="C:\Users\vinit\Desktop\ReCaptcha Solver NervousTuber\captchaaudio\audio.mp3">
+                                                    <ui:SetValue.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a17bb635-e64d-44bd-aabb-8b88fe8e29e6" InformativeScreenshot="836d350de4975c159d333084250ccc95" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" WaitForReady="COMPLETE">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                      </ui:Target>
+                                                    </ui:SetValue.Target>
+                                                  </ui:SetValue>
+                                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="UPLOADING FILE" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                    <ui:Click.CursorPosition>
+                                                      <ui:CursorPosition Position="Center">
+                                                        <ui:CursorPosition.OffsetX>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetX>
+                                                        <ui:CursorPosition.OffsetY>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetY>
+                                                      </ui:CursorPosition>
+                                                    </ui:Click.CursorPosition>
+                                                    <ui:Click.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6af0f8f-a306-4a3e-9484-930c520a0074" InformativeScreenshot="3504ae47ec1de6151ec5e3def826b504" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" WaitForReady="COMPLETE">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                      </ui:Target>
+                                                    </ui:Click.Target>
+                                                  </ui:Click>
+                                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                  <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="EXTRACTING CONVERTED TEXT" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_2">
+                                                    <ui:GetFullText.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="842885e2-c998-4960-a87b-2f98a17f7937" InformativeScreenshot="056ceb25360f01e2980f5c92fac7d588" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='root' tag='DIV' /&gt;" WaitForReady="INTERACTIVE">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                      </ui:Target>
+                                                    </ui:GetFullText.Target>
+                                                    <ui:GetFullText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[guardop]</OutArgument>
+                                                    </ui:GetFullText.Text>
+                                                  </ui:GetFullText>
+                                                  <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CloseTab_2" />
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:BrowserScope.Body>
+                                          </ui:BrowserScope>
+                                        </Sequence>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID3">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">410,577</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">510,643 510,654.5</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="PASTING CONVERTED TEXT INTO CAPTCHA " sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[guardop]">
+                                                <ui:SetValue.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e10f067-1212-455a-bf38-8c6bc9af5a95" InformativeScreenshot="2aa28ba79c2a2e058871d17685f6cc15" Selector="&lt;html app='msedge.exe' title='ReCAPTCHA demo' /&gt;&lt;webctrl src='https://www.google.com/recaptcha/api2/bframe?hl=en&amp;amp;v=**' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:SetValue.Target>
+                                              </ui:SetValue>
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK ON VERIFY" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click.CursorPosition>
+                                                  <ui:CursorPosition Position="Center">
+                                                    <ui:CursorPosition.OffsetX>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetX>
+                                                    <ui:CursorPosition.OffsetY>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetY>
+                                                  </ui:CursorPosition>
+                                                </ui:Click.CursorPosition>
+                                                <ui:Click.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1027747f-c12b-44c9-9d6f-72a23ada87d2" InformativeScreenshot="03f664c8fe343b64f337368d80836715" Selector="&lt;html app='msedge.exe' title='ReCAPTCHA demo' /&gt;&lt;webctrl src='https://www.google.com/recaptcha/api2/bframe?hl=en&amp;amp;v=**' tag='IFRAME' /&gt;&lt;webctrl id='recaptcha-verify-button' tag='BUTTON' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:Click.Target>
+                                              </ui:Click>
+                                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                            </Sequence>
+                                            <FlowStep.Next>
+                                              <FlowStep x:Name="__ReferenceID10">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">410,654.5</av:Point>
+                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                    <av:PointCollection x:Key="ConnectorLocation">510,705.5 510,726.5</av:PointCollection>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:ImageFound DisplayName="CHECK IF CAPTCHA HAS BEEN SOLVED" Found="[retry]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+                                                  <ui:ImageFound.Image>
+                                                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                                                  </ui:ImageFound.Image>
+                                                  <ui:ImageFound.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e6a36d38-839c-4463-a234-5737b6306c41" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
+                                                  </ui:ImageFound.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:ImageFound>
+                                                <FlowStep.Next>
+                                                  <FlowDecision x:Name="__ReferenceID8" Condition="[retry]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <av:Point x:Key="ShapeLocation">470.5,726.5</av:Point>
+                                                        <av:Size x:Key="ShapeSize">79,87</av:Size>
+                                                        <av:PointCollection x:Key="FalseConnector">549.5,770 800,770 800,545.5</av:PointCollection>
+                                                        <av:PointCollection x:Key="TrueConnector">470.5,770 390,770</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <FlowDecision.True>
+                                                      <FlowStep x:Name="__ReferenceID11">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">190,744.5</av:Point>
+                                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="SUCCESSFULLY SOLVED" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;CAPTCHA SOLVED&quot;]">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </ui:MessageBox>
+                                                      </FlowStep>
+                                                    </FlowDecision.True>
+                                                    <FlowDecision.False>
+                                                      <FlowStep x:Name="__ReferenceID9">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">700,494.5</av:Point>
+                                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                            <av:PointCollection x:Key="ConnectorLocation">800,494.5 800,310 610,310</av:PointCollection>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="RETRYING TO SOLVE THE CAPTCHA" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                          <ui:Click.CursorPosition>
+                                                            <ui:CursorPosition Position="Center">
+                                                              <ui:CursorPosition.OffsetX>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetX>
+                                                              <ui:CursorPosition.OffsetY>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:CursorPosition.OffsetY>
+                                                            </ui:CursorPosition>
+                                                          </ui:Click.CursorPosition>
+                                                          <ui:Click.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e03a3fc1-eed9-4c68-9512-1d558881f7d9" InformativeScreenshot="cf8bdd8ecb079df88890ea9574c96dfb" Selector="&lt;html app='msedge.exe' title='ReCAPTCHA demo' /&gt;&lt;webctrl src='https://www.google.com/recaptcha/api2/bframe?hl=en&amp;amp;v=**' tag='IFRAME' /&gt;&lt;webctrl id='recaptcha-reload-button' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                            </ui:Target>
+                                                          </ui:Click.Target>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </ui:Click>
+                                                        <FlowStep.Next>
+                                                          <x:Reference>__ReferenceID0</x:Reference>
+                                                        </FlowStep.Next>
+                                                      </FlowStep>
+                                                    </FlowDecision.False>
+                                                  </FlowDecision>
+                                                </FlowStep.Next>
+                                              </FlowStep>
+                                            </FlowStep.Next>
+                                          </FlowStep>
+                                        </FlowStep.Next>
+                                      </FlowStep>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowDecision.False>
+                      </FlowDecision>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+              <x:Reference>__ReferenceID1</x:Reference>
+              <x:Reference>__ReferenceID2</x:Reference>
+              <x:Reference>__ReferenceID3</x:Reference>
+              <x:Reference>__ReferenceID4</x:Reference>
+              <x:Reference>__ReferenceID0</x:Reference>
+              <x:Reference>__ReferenceID5</x:Reference>
+              <x:Reference>__ReferenceID6</x:Reference>
+              <x:Reference>__ReferenceID7</x:Reference>
+              <x:Reference>__ReferenceID8</x:Reference>
+              <x:Reference>__ReferenceID9</x:Reference>
+              <x:Reference>__ReferenceID10</x:Reference>
+              <x:Reference>__ReferenceID11</x:Reference>
+            </Flowchart>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
